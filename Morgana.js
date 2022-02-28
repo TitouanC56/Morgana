@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+require('dotenv').config();
 const client = new Discord.Client({
   intents: ["DIRECT_MESSAGES", "GUILDS", "DIRECT_MESSAGE_REACTIONS", "DIRECT_MESSAGE_TYPING", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "GUILD_MESSAGE_TYPING"],
   presence: {
@@ -9,7 +10,6 @@ const client = new Discord.Client({
     }
   }
 })
-const token = "OTQ2NzU5NDQ2Mzc2MzUzODAz.YhjYcQ.5LFb-LvpaP_JcenrpeO_bDua3VU"
 
 client.once('ready', () => {
   console.log("Félicitations, votre bot Discord a été correctement initialisé !");
@@ -67,4 +67,4 @@ afficherDate();
 
 
 
-client.login(token);
+client.login(process.env.TOKEN);
