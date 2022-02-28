@@ -1,0 +1,18 @@
+{
+  "name": "morgana",
+  "version": "1.0.0",
+  "description": "Go to sleep Joker !",
+  "main": "Morgana.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Persona",
+    "5"
+  ],
+  "author": "itachi4256",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
